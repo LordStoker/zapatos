@@ -8,7 +8,7 @@ export default function Card(){
                 <article className='card'>
                 
                 <section key={product.id} className="card-container-img">
-                    {product.newCollection && 
+                    {product.newCollection && product.stock > 45 && 
                     <span className='new'><img className = "star" src= {`/images/${product.imgs.imgStar}`} alt="estrella" /></span>}
                     {product.stock > 45 ? <img className = "img-product" src= {`/images/${product.imgs.imgProduct}`} alt="product" />
                      
